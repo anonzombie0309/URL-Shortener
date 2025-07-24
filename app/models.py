@@ -1,15 +1,6 @@
 from datetime import datetime
 
-# In-memory store for URL mappings and metadata
-# Structure:
-# {
-#   "short_code": {
-#       "url": "http://example.com",
-#       "clicks": 0,
-#       "created_at": datetime object (UTC)
-#   },
-#   ...
-# }
+
 url_store = {}
 
 def create_url_entry(short_code: str, long_url: str):
